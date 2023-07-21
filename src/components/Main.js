@@ -1,4 +1,8 @@
 function Main() {
-  return <main>Little Lemon Restaurant</main>;
+  return (
+    <main style={{ backgroundColor: "#495E57", padding: "42vh" }}>
+      Little Lemon Restaurant
+    </main>
+  );
 }
 export default Main;

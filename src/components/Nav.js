@@ -3,16 +3,24 @@ function Nav() {
     <nav>
       <ul style={{ display: "flex", listStyleType: "none" }}>
         <li style={{ marginRight: "1em" }}>
-          <a href="">Home</a>{" "}
+          <a style={{ textDecoration: "none" }} href="">
+            Home
+          </a>{" "}
         </li>
         <li style={{ marginRight: "1em" }}>
-          <a href="">About</a>{" "}
+          <a style={{ textDecoration: "none" }} href="">
+            About
+          </a>{" "}
         </li>
         <li style={{ marginRight: "1em" }}>
-          <a href="">Menu</a>{" "}
+          <a style={{ textDecoration: "none" }} href="">
+            Menu
+          </a>{" "}
         </li>
         <li style={{ marginRight: "1em" }}>
-          <a href="">Contact Us</a>{" "}
+          <a style={{ textDecoration: "none" }} href="">
+            Contact Us
+          </a>{" "}
         </li>
       </ul>
     </nav>
