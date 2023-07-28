@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Nav.css";
 function Nav() {
   return (
@@ -59,11 +59,11 @@ function Nav() {
               Menu
             </a>{" "}
           </li>
-          <li style={{ marginRight: "1em" }}>
+          {/* <li style={{ marginRight: "1em" }}>
             <a style={{ textDecoration: "none" }} href="/reservations">
               Reservations
             </a>{" "}
-          </li>
+          </li> */}
           <li style={{ marginRight: "1em" }}>
             <a style={{ textDecoration: "none" }} href="/orderonline">
               Order Online

@@ -9,25 +9,17 @@ import LoginSign from "./LoginSign.js";
 import BookingPage from "./BookingPage";
 import ConfirmedBooking from "./ConfirmedBooking";
 function Main() {
-  //   const [availableTimes, setAvailableTimes] = useState([
-  //     "17:00",
-  //     "18:00",
-  //     "19:00",
-  //     "20:00",
-  //     "21:00",
-  //     "22:00",
-  //   ]);
-  const seededRandom = function (seed) {
+  const randomEntry = function (val) {
     var m = 2 ** 35 - 31;
     var a = 185852;
-    var s = seed % m;
+    var s = val % m;
     return function () {
       return (s = (s * a) % m) / m;
     };
   };
   const fetchAPI = function (date) {
     let result = [];
-    let random = seededRandom(date.getDate());
+    let random = randomEntry(date.getDate());
 
     for (let i = 17; i <= 23; i++) {
       if (random() < 0.5) {
@@ -52,9 +44,6 @@ function Main() {
       navigate("/bookingConfirmation");
     }
   }
-  //   const initializeTimes = () => {
-  //     return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  //   };
   const [state, dispatch] = useReducer(updateTimes, initialState);
 
   return (

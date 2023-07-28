@@ -1,26 +1,16 @@
 import React, { useState } from "react";
 import "../App.css";
 function BookingPage(props) {
-  console.log("props", props);
   const { availableTimes, dispatch, submitForm } = props;
-  console.log("availableTimes", props.availableTimes);
   const [bookingValues, setBooking] = useState({
-    bookingDate: "", //"2023-07-24",
-    bookingTime: "", //"17:00",
-    bookedGuests: "", //"2",
-    bookingOccasion: "", //"Anniversary",
+    bookingDate: "",
+    bookingTime: "",
+    bookedGuests: "",
+    bookingOccasion: "",
   });
   const [errors, setErrors] = useState("");
-  //   const [availableTimes, useAvailableTimes] = useState([
-  //     "17:00",
-  //     "18:00",
-  //     "19:00",
-  //     "20:00",
-  //     "21:00",
-  //     "22:00",
-  //   ]);
+
   const dateHandler = (e) => {
-    //  bookingValues.bookingDate = e.target.value;
     setBooking((prevBooking) => ({
       ...prevBooking,
       bookingDate: e.target.value,
@@ -58,11 +48,10 @@ function BookingPage(props) {
     //    errors.bookedGuests = "Select a booking time";
     //  }
     submitForm(e);
-    console.log(bookingValues);
   };
   return (
     <div style={{ display: "flex", minHeight: "90vh" }} className="form-bg">
-      {/*<div>
+      <div>
         <h1
           style={{
             color: "#495E57",
@@ -71,7 +60,7 @@ function BookingPage(props) {
         >
           Book your Reservations
         </h1>
-      </div> */}
+      </div>
       <section>
         <form onSubmit={reservationHandler}>
           <fieldset
@@ -158,7 +147,6 @@ function BookingPage(props) {
               aria-label="On Click"
               disabled={errors}
               className="submit-btn"
-              //  onClick={reservationHandler}
             />
           </fieldset>
         </form>
