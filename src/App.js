@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <>
-      <h1>Little Lemon</h1>
+      {/* <h1>Little Lemon</h1> */}
       <BrowserRouter>
         <Header />
         {/* <Nav /> */}

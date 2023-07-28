@@ -1,8 +1,8 @@
 function ConfirmedBooking() {
   return (
-    <>
-      <h1>Booking Confirmed</h1>
-    </>
+    <div style={{ display: "flex" }}>
+      <h1 style={{ paddingLeft: "40vh" }}>Booking Confirmed</h1>
+    </div>
   );
 }
 export default ConfirmedBooking;

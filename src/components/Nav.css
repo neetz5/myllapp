@@ -1,3 +1,11 @@
-.headerList {
-  text-decoration: "none";
+a {
+  color: rgb(39, 81, 41);
+  text-decoration: "none" !important;
+  font-weight: bold;
+}
+a:hover {
+  color: darkseagreen;
+}
+a:active {
+  color: rgb(14, 73, 73);
 }

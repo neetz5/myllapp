@@ -58,7 +58,14 @@ function Main() {
   const [state, dispatch] = useReducer(updateTimes, initialState);
 
   return (
-    <main style={{ backgroundColor: "#495E57", padding: "42vh" }}>
+    <main
+      style={{
+        backgroundColor: "#495E57",
+        position: "relative",
+        // top: "3rem",
+        minHeight: "90vh",
+      }}
+    >
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/aboutus" element={<About />}></Route>

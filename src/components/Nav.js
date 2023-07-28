@@ -1,11 +1,10 @@
-import { BrowserRouter, NavLink } from "react-router-dom";
-import Main from "./Main";
+import React, { Component } from "react";
+import "./Nav.css";
 function Nav() {
   return (
-    // <BrowserRouter>
     <>
       <nav>
-        <NavLink style={{ textDecoration: "none", margin: "1em" }} to="/">
+        {/* <NavLink style={{ textDecoration: "none", margin: "1em" }} to="/">
           Home
         </NavLink>
         <NavLink
@@ -43,32 +42,46 @@ function Nav() {
           to="/booking"
         >
           Booking
-        </NavLink>
-        {/* <ul style={{ display: "flex", listStyleType: "none" }}>
+        </NavLink> */}
+        <ul style={{ display: "flex", listStyleType: "none" }}>
           <li style={{ marginRight: "1em" }}>
-            <a style={{ textDecoration: "none" }} href="">
+            <a style={{ textDecoration: "none" }} href="/">
               Home
             </a>{" "}
           </li>
           <li style={{ marginRight: "1em" }}>
-            <a style={{ textDecoration: "none" }} href="">
+            <a style={{ textDecoration: "none" }} href="/aboutus">
               About
             </a>{" "}
-          </li>
+          </li>{" "}
           <li style={{ marginRight: "1em" }}>
-            <a style={{ textDecoration: "none" }} href="">
+            <a style={{ textDecoration: "none" }} href="/menu">
               Menu
             </a>{" "}
           </li>
           <li style={{ marginRight: "1em" }}>
-            <a style={{ textDecoration: "none" }} href="">
-              Contact Us
+            <a style={{ textDecoration: "none" }} href="/reservations">
+              Reservations
             </a>{" "}
           </li>
-        </ul> */}
+          <li style={{ marginRight: "1em" }}>
+            <a style={{ textDecoration: "none" }} href="/orderonline">
+              Order Online
+            </a>{" "}
+          </li>
+          <li style={{ marginRight: "1em" }}>
+            <a style={{ textDecoration: "none" }} href="/loginsignup">
+              Login/SignUp
+            </a>{" "}
+          </li>
+          <li style={{ marginRight: "1em" }}>
+            <a style={{ textDecoration: "none" }} href="/booking">
+              Booking
+            </a>{" "}
+          </li>
+        </ul>
       </nav>
     </>
-    // </BrowserRouter>
   );
 }
 export default Nav;

@@ -1,5 +1,10 @@
+body {
+  font-family: "Markazi Text";
+  font-size: larger;
+}
 .App {
   text-align: center;
+  font-family: "Markazi Text";
 }
 
 .App-logo {
@@ -37,6 +42,43 @@
   }
 }
 
-.headerList {
-  text-decoration: "none";
+.submit-btn {
+  margin: 2rem;
+  min-height: 2rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  font-family: "Markazi Text";
+  font-size: 20px;
+}
+
+.label-color {
+  color: rgb(11, 7, 7);
+  padding-top: 1rem;
+  font-weight: bold;
+  font-family: "Markazi Text";
+  font-size: 20px;
+}
+
+.form-bg {
+  /* background-image: url("/src/images/restauranfood.jpg"); */
+  background-image: url("/src/images/restaurant.jpg");
+  background-size: cover;
+  /* background-repeat: repeat-y; */
+}
+
+.field-submit {
+  min-height: 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-family: "Markazi Text";
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about-us {
+  background-image: url("/src/images/MarioandAdrianA.jpg");
+  background-size: cover;
 }

@@ -6,7 +6,7 @@ const updateTimes = jest.fn();
 
 test("Renders the BookingPage heading", () => {
   render(<BookingPage availableTimes={availableTimings} />);
-  const headingElement = screen.getByText("Book Now");
+  const headingElement = screen.getByText("Book Your Reservations");
   expect(headingElement).toBeInTheDocument();
 });
 
